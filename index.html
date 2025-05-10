@@ -10,6 +10,8 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Anjali</a>
+        <div class="menu-icon" onclick="document.querySelector('nav').classList.toggle('show')">
+            <i class='bx bx-menu'></i></div>
 
         <nav class="navbar">
             <a href="#" class="active">Home</a>
@@ -19,14 +21,12 @@
         </nav>
     </header>
 
-    <section class="home">
+    <section id="home">
         <div class="home-content">
             <h1>Hi, I'm Anjali</h1>
             <h3>Frontend Developer</h3>
             <p>I'm a Computer Science student with a strong interest in defence technology and IoT.I'm always curious to learn how tech can be used to solve real-world problems,especially in the defence sector.Focused driven, and always ready to e3xplore something new</p>
-            <div class="btn-box">
-                <a href="#">Connect</a>
-                </div>
+            <a href="#connect" class="btn-box">Connect</a>
         </div>
         <div class="home-sci"> 
             <a href="https://www.linkedin.com/in/anjali-rout-11296b2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
@@ -34,12 +34,23 @@
             <a href="https://github.com/anjali091"><i class='bx bxl-github'></i></a>
         </div>
         <div class="images">
-        <img src="wp1.jpg" class="girl">
+        <img src="drn.jpg" class="drone" alt="drone image" loading="lazy">
+        <img src="wp1.jpg" class="girl" alt="anjali" loading="lazy">
+        <img src="drn.jpg" class="drone" alt="drone image" loading="lazy">
         </div>
-        </div>
-
-        <span class="home-imgHover"></span>
-
+ </section>
+ <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate learner who loves to know more about things. With a foundation in Computer Science and a vision for defense and IoT innovations</p>
     </section>
+    <section id="education" >
+        <h2>Education</h2>
+        <p>Currently pursuing a Bachelor's degree in Computer Science & Engineering. I am constantly upgrading my skills through online platforms and hands-on projects.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p> you can connect with me through linkedin,github or instagram</p>
+    </section>
+    
 </body>
 </html>
