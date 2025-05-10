@@ -1,56 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style2.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Anjali</a>
-        <div class="menu-icon" onclick="document.querySelector('nav').classList.toggle('show')">
-            <i class='bx bx-menu'></i></div>
+    <title>Portfolio</title>
+     <link rel="stylesheet" href="style2.css">
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+ </head>
+ <body>
+  <header>
+    <a href="#" class="logo">Anjali</a>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  </header>
 
-    <section id="home">
-        <div class="home-content">
-            <h1>Hi, I'm Anjali</h1>
-            <h3>Frontend Developer</h3>
-            <p>I'm a Computer Science student with a strong interest in defence technology and IoT.I'm always curious to learn how tech can be used to solve real-world problems,especially in the defence sector.Focused driven, and always ready to e3xplore something new</p>
-            <a href="#connect" class="btn-box">Connect</a>
-        </div>
-        <div class="home-sci"> 
-            <a href="https://www.linkedin.com/in/anjali-rout-11296b2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://www.instagram.com/anjalii_2206r/?__pwa=1#"><i class='bx bxl-instagram'></i></i></a>
-            <a href="https://github.com/anjali091"><i class='bx bxl-github'></i></a>
-        </div>
-        <div class="images">
-        <img src="drn.jpg" class="drone" alt="drone image" loading="lazy">
-        <img src="wp1.jpg" class="girl" alt="anjali" loading="lazy">
-        <img src="drn.jpg" class="drone" alt="drone image" loading="lazy">
-        </div>
- </section>
- <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate learner who loves to know more about things. With a foundation in Computer Science and a vision for defense and IoT innovations</p>
-    </section>
-    <section id="education" >
-        <h2>Education</h2>
-        <p>Currently pursuing a Bachelor's degree in Computer Science & Engineering. I am constantly upgrading my skills through online platforms and hands-on projects.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p> you can connect with me through linkedin,github or instagram</p>
-    </section>
-    
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hi, I'm Anjali!</h1>
+      <h2>Frontend Developer & Tech Enthusiast</h2>
+      <p>I am passionate about technology, especially in the fields of IoT and defense tech. I focus on creating innovative, user-centered web applications.</p>
+      <a href="#contact" class="btn">Connect with Me</a>
+      <div class="social-icons">
+        <a href="https://github.com/anjali091"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/anjalii_2206r/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/anjali-rout-11296b2ba"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </div>
+    <div class="home-image">
+      <img src="wp1.jpg" alt="Anjali Photo">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate learner who loves to know more about things. With a foundation in Computer Science and a vision for defense and IoT innovations, I am always driven to explore and contribute to technological advancements.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>Currently pursuing a Bachelor's degree in Computer Science & Engineering. I am constantly upgrading my skills through online platforms and hands-on projects.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can connect with me via social links or drop a message on LinkedIn or GitHub. I'm always open to collaborations and new opportunities!</p>
+  </section>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
 </body>
+
 </html>
+ 
+
+  
